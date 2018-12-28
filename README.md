@@ -1,2 +1,35 @@
 # homemade-machine-learning-cn
-homemade-machine-learning
+[homemade-machine-learning](https://github.com/trekhleb/homemade-machine-learning)
+
+> 本项目包含了用 **Python** 实现流行的机器学习算法例子和他们背后的数学原理说明。每个例子包含交互的 **Jupyter Notebook** demo，你可以操作训练数据，算法配置，并且可以在你的播放器内立即看到结果、图表和预测值。本项目的大部分例子都基于吴恩达的《[机器学习课程](https://www.coursera.org/learn/machine-learning)》。
+
+本项目的目的不在于使用第三方库仅用几行完成机器学习算法，而是从零开始，使用算法背后的数学进行编写。这也是为什么所有算法实现都被称为“自制”，而不是为了产品应用。
+
+## 有监督学习 Supervised Learning
+
+在有监督学习中，我们有一个训练数据集合作为输入，每个训练集合有一个标签或“真值”集合作为输出。然后，我们训练模型（机器学习算法参数）正确地映射（正确预测）输入和输出。最终目的是找到一组模型参数，可以成功的把新数据的输入映射（预测）到输出。
+
+### 回归 Regression
+
+我们在回归问题中进行真实值预测。一般我们试图在训练数据中绘制线/平面/n维平面。
+
+用途举例：股价预测，销售分析，任意数字的依赖度等。
+
+#### 🤖 线性回归 Linear Regression
+
+* [数学 | 线性回归]
+* [代码 | 线性回归]
+* [数学 | 线性回归]
+
+### 神经网络 Neural Network (NN)
+
+神经网络本身不是一个算法，而是一个框架，很多不同机器学习算法一起工作，处理复杂的输入。
+
+用途举例：所有其他算法的替代算法，图像视频，语音识别，图像处理（应用特殊形式），翻译等。
+
+#### 多层感知 Multilayer Perceptron (MLP)
+
+* [[数学 | 多层感知](/homemade/neural_network/README.md)] - 理论和扩展阅读链接
+
+
+
