@@ -1,4 +1,4 @@
-# homemade-machine-learning-cn
+# 自制机器学习
 [homemade-machine-learning](https://github.com/trekhleb/homemade-machine-learning)
 
 > 本项目包含了用 **Python** 实现流行的机器学习算法例子和他们背后的数学原理说明。每个例子包含交互的 **Jupyter Notebook** demo，你可以操作训练数据，算法配置，并且可以在你的播放器内立即看到结果、图表和预测值。本项目的大部分例子都基于吴恩达的《[机器学习课程](https://www.coursera.org/learn/machine-learning)》。
@@ -17,15 +17,11 @@
 
 #### 🤖 线性回归 Linear Regression
 
-* [数学 | 线性回归]
-* [代码 | 线性回归]
-* [数学 | 线性回归]
-
 ### 神经网络 Neural Network (NN)
 
 神经网络本身不是一个算法，而是一个框架，很多不同机器学习算法一起工作，处理复杂的输入。
 
-用途举例：所有其他算法的替代算法，图像视频，语音识别，图像处理（应用特殊形式），翻译等。
+用途举例：所有其他算法的替代算法，图像识别，语音识别，图像处理（应用特殊样式），语言翻译等。
 
 #### 多层感知 Multilayer Perceptron (MLP)
 
