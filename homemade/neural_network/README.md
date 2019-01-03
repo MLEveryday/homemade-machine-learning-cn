@@ -4,6 +4,10 @@
 
 ## Jupyter Demos
 
+▶️ [Demo | 多层感知 Multilayer Perceptron | MNIST](https://nbviewer.jupyter.org/github/MLEveryday/homemade-machine-learning/blob/master/notebooks/neural_network/multilayer_perceptron_demo.ipynb) - 从 `28x28` 像素图片中识别手写数字 。
+
+▶️ [Demo | 多层感知 Multilayer Perceptron | Fashion MNIST](https://nbviewer.jupyter.org/github/MLEveryday/homemade-machine-learning/blob/master/notebooks/neural_network/multilayer_perceptron_fashion_demo.ipynb) - 从 `28x28`  像素图片中识别衣服类型（裙子，外套，凉鞋等）。
+
 ## 定义 Definition
 
 人工神经网络 **Artificial neural networks** (ANN) 或 连接系统都是灵感来自组成动物大脑生物神经网络的计算系统。神经网络本身不是一个算法，而是一个框架，很多不同机器学习算法一起工作，处理复杂的数据输入。这些系统通过例子“学习”解决任务，一般不需要任何特殊任务条件的编程。
@@ -14,11 +18,11 @@
 
 ![Artificial Neuron](https://insights.sei.cmu.edu/sei_blog/sestilli_deeplearning_artificialneuron3.png)
 
-在一般的人工神经网络中，神经元之间的连接信号是数字，每个神经元的输出是一些非线性方程输入的和。神经元的连接成为**边 Edge**。神经元和边都有一个**权重 weight**，随运学习过程调整。权重增加或减少连接中信号强度。人工神经元可能有一个阈值，当聚集的信号超过阈值才会发送出去。人工神经元聚集成层。不同层对输入的处理不同。信号从第一层（**输入层 input layer**），到最后一层（**输出层 output layer**）,可能多次经过**中间层 inner layer**。
+在一般的人工神经网络中，神经元之间的连接信号是数字，每个神经元的输出是一些非线性方程输入的和。神经元的连接成为**边 edge**。神经元和边都有一个**权重 weight**，随学习过程调整。权重增加或减少连接中信号强度。人工神经元可能有一个阈值，当聚集的信号超过阈值才会发送出去。人工神经元聚集成层。不同层对输入的处理不同。信号从第一层（**输入层 input layer**），到最后一层（**输出层 output layer**）,可能多次经过**中间层 inner layer**。
 
 ![Neural Network](https://upload.wikimedia.org/wikipedia/commons/4/46/Colored_neural_network.svg)
 
-**多层感知 multilayer perceptron**  (MLP) **是一种前馈人工神经网络。MLP 至少包括3层节点：输入层，隐含层和输出层。除了输入节点，每个节点都是使用非线性激活函数的神经元。MLP 训练使用称作有监督学习技术的反向传播法 backpropagation 。它的多层和非线性激活函数使 MLP 区别于线性感知 linear perceptron。它可以处理非线性的数据。
+**多层感知 multilayer perceptron  (MLP) ** 是一种前馈人工神经网络。MLP 至少包括3层节点：输入层，隐含层和输出层。除了输入节点，每个节点都是使用非线性激活函数的神经元。MLP 训练使用称作有监督学习技术的反向传播法 backpropagation 。它的多层和非线性激活函数使 MLP 区别于线性感知 linear perceptron。它可以处理非线性的数据。
 
 ## 神经元模型 Neuron Model （逻辑单元 Logistic Unit）
 
@@ -58,13 +62,13 @@
 
 比如说，我们想让它识别图片中是行人、小汽车、摩托车还是卡车。
 
-我们需要神经网络输出层有4个单元（输入层数量更多，将有所有输入图像的像素。比如说，图像是20x20像素，那么输入层就有400个，每个包含图像对应点的灰度。）
+我们需要神经网络输出层有4个单元（输入层数量更多，对应所有输入图像的像素。比如说，图像是20x20像素，那么输入层就有400个，每个包含图像对应点的黑白色。）
 
 ![multi-class-network](../../images/neural_network/multi-class-network.drawio.svg)
 
 ![h-Theta-multi-class](../../images/neural_network/multi-class-h.svg)
 
-本例中，我们希望假设有如下值：
+本例中，我们希望最终`假设`有如下值：
 
 ![h-pedestrian](../../images/neural_network/h-pedestrian.svg)
 
@@ -80,9 +84,9 @@
 
 ![y-i-multi](../../images/neural_network/y-i-multi.svg)
 
-## 前向传播 Forward （或 Feedforward） Propagation
+## 前向（或前馈）传播 Forward (Feedforward)Propagation
 
-前向传播是一个交互的过程，每一层计算从输入层的激活函数，给到输出层。
+前向传播是一个交互的过程，每一层从输入层计算出激活值，给到输出层。
 
 在前面提到的简单网络，我们可以基于输入层和网络参数，计算第2层的激活值
 
@@ -150,7 +154,7 @@
 
 ### 梯度计算 Gradient Computation
 
-反向传播法和线性或逻辑回归的第速度下降法目的相同：修改权重使代价函数最小。
+反向传播目的和线性或逻辑回归梯度下降法相同：修改权重使代价函数最小。
 
 换句话说，我们要能够计算每个权重代价函数的偏导数。
 
@@ -179,3 +183,38 @@
 计算每步梯度：
 
 ![J-partial-detailed](../../images/neural_network/J-partial-detailed.svg)
+
+### 反向传播算法
+
+训练集合：
+
+![training-set](../../images/neural_network/training-set.svg)
+
+我们需要设置：
+
+![Delta](../../images/neural_network/Delta.svg)
+
+计算过程：
+
+1. 前向传播计算出每层输出
+2. 真实值和现有权重，反向传播计算每层对应真实值
+3. 求出每层输出和真实值误差
+4. 
+
+步骤如下：
+
+![backpropagation](../../images/neural_network/backpropagation.svg)
+
+## 随机初始化 Random Initialization
+
+在开始前向传播法之前，我们需要初始化权重参数。我们不能设置所有权重为0，因为会使每层的所有单元学习到相同结果，导致网络失效。换句话说，我们需要**打破对称性 break the symmetry **。因此，我们设置权重初始值为非常小的随机数：
+
+![theta-init](../../images/neural_network/theta-init.svg)
+
+## 参考 References
+
+- [Machine Learning on Coursera](https://www.coursera.org/learn/machine-learning)
+- [But what is a Neural Network? By 3Blue1Brown](https://www.youtube.com/watch?v=aircAruvnKk)
+- [Neural Network on Wikipedia](https://en.wikipedia.org/wiki/Artificial_neural_network)
+- [TensorFlow Neural Network Playground](https://playground.tensorflow.org/)
+- [Deep Learning by Carnegie Mellon University](https://insights.sei.cmu.edu/sei_blog/2018/02/deep-learning-going-deeper-toward-meaningful-patterns-in-complex-data.html)
