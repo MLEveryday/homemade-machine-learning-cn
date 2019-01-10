@@ -17,15 +17,67 @@
 
 #### 🤖 线性回归 Linear Regression
 
+
+
+### 分类器 Classification
+
+#### 🤖 逻辑回归 Logistic Regression
+
+
+
+## 无监督学习 Unsupervised Learning
+
+### 聚类 Clustering
+
+#### 🤖 k-均值算法 K-means Algorithm
+
+
+
+### 异常检测 Anomaly Detection
+
+#### 🤖 应用高斯分布的异常检测 Anomaly Detection using Gaussian Distribution
+
+
+
 ### 神经网络 Neural Network (NN)
 
 神经网络本身不是一个算法，而是一个框架，很多不同机器学习算法一起工作，处理复杂的输入。
 
 用途举例：所有其他算法的替代算法，图像识别，语音识别，图像处理（应用特殊样式），语言翻译等。
 
-#### 多层感知 Multilayer Perceptron (MLP)
+#### 🤖 多层感知 Multilayer Perceptron (MLP)
 
-* [[数学 | 多层感知](/homemade/neural_network/README.md)] - 理论和扩展阅读链接
+* [[数学 | 多层感知器](/homemade/neural_network/README.md)] - 理论和扩展阅读链接
 
 
+
+## 机器学习路线图
+
+
+
+## 前提
+
+#### 安装 Python
+
+#### 安装依赖库
+
+#### 启动本地 Jupyter
+
+#### 启动远程 Jupyter
+
+
+
+## 数据
+
+
+
+## 贡献列表
+
+| 章节                  | 译者 |
+| --------------------- | ---- |
+| Linear Regression     |      |
+| Logistic Regression   |      |
+| Anomaly Detection     |      |
+| Anomaly Detection     |      |
+| Multilayer Perceptron |      |
 
