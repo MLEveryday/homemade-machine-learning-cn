@@ -4,9 +4,9 @@
 
 ## Jupyter Demos
 
-▶️ [Demo | 多层感知 Multilayer Perceptron | MNIST](https://nbviewer.jupyter.org/github/MLEveryday/homemade-machine-learning/blob/master/notebooks/neural_network/multilayer_perceptron_demo.ipynb) - 从 `28x28` 像素图片中识别手写数字 。
+▶️ [Demo | 多层感知机 Multilayer Perceptron | MNIST](https://nbviewer.jupyter.org/github/MLEveryday/homemade-machine-learning/blob/master/notebooks/neural_network/multilayer_perceptron_demo.ipynb) - 从 `28x28` 像素图片中识别手写数字 。
 
-▶️ [Demo | 多层感知 Multilayer Perceptron | Fashion MNIST](https://nbviewer.jupyter.org/github/MLEveryday/homemade-machine-learning/blob/master/notebooks/neural_network/multilayer_perceptron_fashion_demo.ipynb) - 从 `28x28`  像素图片中识别衣服类型（裙子，外套，凉鞋等）。
+▶️ [Demo | 多层感知机 Multilayer Perceptron | Fashion MNIST](https://nbviewer.jupyter.org/github/MLEveryday/homemade-machine-learning/blob/master/notebooks/neural_network/multilayer_perceptron_fashion_demo.ipynb) - 从 `28x28`  像素图片中识别衣服类型（裙子，外套，凉鞋等）。
 
 ## 定义 Definition
 
@@ -22,7 +22,7 @@
 
 ![Neural Network](https://upload.wikimedia.org/wikipedia/commons/4/46/Colored_neural_network.svg)
 
-**多层感知 multilayer perceptron  (MLP) ** 是一种前馈人工神经网络。MLP 至少包括3层节点：输入层，隐含层和输出层。除了输入节点，每个节点都是使用非线性激活函数的神经元。MLP 训练使用称作有监督学习技术的反向传播法 backpropagation 。它的多层和非线性激活函数使 MLP 区别于线性感知 linear perceptron。它可以处理非线性的数据。
+**多层感知机 multilayer perceptron  (MLP) ** 是一种前馈人工神经网络。MLP 至少包括3层节点：输入层，隐含层和输出层。除了输入节点，每个节点都是使用非线性激活函数的神经元。MLP 训练使用称作有监督学习技术的反向传播法 backpropagation 。它的多层和非线性激活函数使 MLP 区别于线性感知机 linear perceptron。它可以处理非线性的数据。
 
 ## 神经元模型 Neuron Model （逻辑单元 Logistic Unit）
 
@@ -196,8 +196,8 @@
 
 计算过程：
 
-1. 将训练集数据输入到 ANN 的输入层，经过隐藏层，最后达到输出层并输出结果，这是 ANN 的前向传播过程；
-2. 由于 ANN 的输出结果与实际结果有误差，则计算估计值与实际值之间的误差，并将该误差从输出层向隐藏层反向传播，直至传播到输入层；
+1. 将训练集数据输入到 ANN 的输入层，经过隐含层，最后达到输出层并输出结果，这是 ANN 的前向传播过程；
+2. 由于 ANN 的输出结果与实际结果有误差，则计算估计值与实际值之间的误差，并将该误差从输出层向隐含层反向传播，直至传播到输入层；
 3. 在反向传播的过程中，根据误差调整各种参数的值；不断迭代上述过程，直至收敛。
 
 步骤如下：
