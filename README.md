@@ -35,9 +35,17 @@
 
 ### 异常检测 Anomaly Detection
 
+异常检测（也叫outliner deteciton）是识别出来与大多数数据有显著不同的样本，事件或观察样例。
+
+用途举例：入侵检测，欺诈检测，系统良性检测，从数据集中取出异常数据等。
+
 #### 🤖 应用高斯分布的异常检测 Anomaly Detection using Gaussian Distribution
 
+*[[数学 | 应用高斯分布的异常检测](/homemade/anomaly_detection/README.md)]-理论和扩展阅读链接  
 
+*[[代码 | 应用高斯分布的异常检测](/homemade/anomaly_detection/multilayer_perceptron.py)]-代码实例
+
+*[[演示 | 异常检测](https://nbviewer.jupyter.org/github/trekhleb/homemade-machine-learning/blob/master/notebooks/anomaly_detection/anomaly_detection_gaussian_demo.ipynb)]-查找服务器操作参数（如延迟```latency```和阈值```threshold```）中的异常
 
 ### 神经网络 Neural Network (NN)
 
