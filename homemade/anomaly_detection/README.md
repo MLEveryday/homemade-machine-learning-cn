@@ -81,7 +81,7 @@
 
 设计出的算法将通过 _F1 score_ 进行评估。
 
-F1 score 是准确率和召回率的调和均值, 最理想的情况为 _1_ （最佳的准确率和召回率）,最坏的情况为 _0_。
+F1 score 是准确率和召回率的调和均值, 最理想的情况为 _1_ （最佳的准确率和召回率）,最坏的情况为 _0_。
 
 ![F1 Score](https://upload.wikimedia.org/wikipedia/commons/2/26/Precisionrecall.svg)
 
