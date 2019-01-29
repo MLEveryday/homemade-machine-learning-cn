@@ -62,9 +62,8 @@ _m_ - 训练样本的个数
 
 步数的方向由当前点函数的导数决定。
 
-![Gradient Descent](../../images/linear_regression/ batch-gradient-2.png)
+![Gradient Descent](../../images/linear_regression/batch-gradient-2.png)
 
 当我们决定了下降的方向后，我们还需要知道下降的步长是多少。
 
 ![Gradient Descent](../../images/linear_regression/batch-gradient-3.png)
-
