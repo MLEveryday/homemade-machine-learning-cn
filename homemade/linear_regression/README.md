@@ -60,10 +60,31 @@ _m_ - 训练样本的个数
 
 ![Gradient Descent](../../images/linear_regression/batch-gradient-1.png)
 
-步数的方向由当前点函数的导数决定。
+梯度下降的方向由当前点的损失函数的导数决定。
 
 ![Gradient Descent](../../images/linear_regression/batch-gradient-2.png)
 
 当我们决定了下降的方向后，我们还需要知道下降的步长是多少。
 
 ![Gradient Descent](../../images/linear_regression/batch-gradient-3.png)
+
+我们需要根据对应梯度下降方向和步长来同时更新![Theta](../../images/linear_regression/theta-j.svg)( _j = 0, 1, ..., n_)。
+
+![Gradient Descent](../../images/linear_regression/gradient-descent-1.svg)
+
+![Gradient Descent](../../images/linear_regression/gradient-descent-2.svg)
+
+![alpha](../../images/linear_regression/alpha.svg)为学习速率，一个决定梯度下降步长大小的常数
+
+![x-i-j](../../images/linear_regression/x-i-j.svg) - 第 _i_ 个训练样本中的第 _j_ 个特征值
+
+![x-i](../../images/linear_regression/x-i.svg) - 第 _i_ 个训练样本的输入（特征）
+
+ _y<sup>i</sup>_    - 第 _i_  个训练样本的输出
+
+_m_    - 训练样本的个数 
+
+_n_     - 特征的个数
+
+> `批量梯度下降`中的批量，指的是算法中每一步都会使用到全部的训练样本数据（我们也可以从上述公式中可以看出）。
+
