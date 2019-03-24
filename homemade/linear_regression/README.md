@@ -26,13 +26,13 @@ n - 特征数
 
 _R<sup>n+1</sup>_ - _n+1_ 个实数组成的矢量
 
-##参数
+## 参数
 
 参数，是我们为了预测，而希望我们的算法可以学习获得的假定式的参数。（比如：预测房间的价格）。
 
 ![Parameters](../../images/linear_regression/parameters.svg)
 
-##假定式
+## 假定式
 
 假定式就是，一个以特征变量和参数作为输入，预测值作为输出的等式。（比如：基于房间大小和房间数量来预测房子的价格）
 
@@ -159,7 +159,7 @@ _n_     - 特征的个数
 
 $$\lambda$$ -正规化参数
 
-**梯度下降** 公示如下：
+**梯度下降** 公式如下：
 
 ![Gradient Descent](../../images/linear_regression/gradient-descent-3.svg)
 
