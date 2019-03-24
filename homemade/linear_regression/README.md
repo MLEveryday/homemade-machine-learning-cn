@@ -108,4 +108,66 @@ _n_     - 特征的个数
 
 ## 多项式回归
 
-多项式回归是通过 _n_ 阶 _x_ 的多项式用来表示独立变量 _x_ 和非独立变量 _y_ 的关系的回归分析。 
+多项式回归是以 _x_ 的_n_ 阶多项式来表示独立变量 _x_ 和非独立变量 _y_ 的关系的回归分析方式。 
+
+尽管多项式回归用来拟合非线性模型数据，但是作为一个统计估计问题来说，多项式回归是线性的。因为，某种意义上来说，多项式回归的假定式是一个未知参数从数据中估计而来的线性函数。所以，多项式回归被认为一个多元线性回归的一种特殊形式。
+
+![Polynomial Regression](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Polyreg_scheffe.svg/650px-Polyreg_scheffe.svg.png)
+
+​                                            示例：三次多项式回归-线性回归的一种类型
+
+你可以通过添加新的多项式特征来创建多项式回归，比如，如果房子的价格和它的大小有非线性依赖，你可以添加一些新的大小相关的特征。
+
+![Polynomial Regression](../../images/linear_regression/polynomial-regression.svg)
+
+#### 正规方程
+
+线性回归存在一个如下的[解析解（封闭解）](https://zh.wikipedia.org/wiki/解析解)：
+
+![Normal Equation](../../images/linear_regression/normal-equation.svg)
+
+使用这个公式不需要任何的特征缩放操作，你并不需要像梯度下降一样循环计算直到收敛来计算才能得到结果，而只需要进行一步计算就可以获得一个确切的解。
+
+#### 正规化
+
+##### 过度拟合问题
+
+如果，我们有很多的特征，学习的假定式或许能很好的拟合训练数据集：
+
+![overfitting](../../images/linear_regression/overfitting-1.svg)
+
+但是无法推广到新数据集（让我们以检测新邮件是否为垃圾邮件为例来预测价格）
+
+![overfitting](https://cdncontribute.geeksforgeeks.org/wp-content/uploads/t0zit.png)
+
+#### 过度拟合的解决方法
+
+这里有两种方法可以用来解决过度拟合问题：
+
++ 减少特征数目
+  + 人工选择保存哪些特征
+  + 模型选择算法
++ 正规化
+  + 保存所有的特征，但是降低模型参数值/量级（$$\theta$$）。
+  + 当我们有很多特征，并且每个特征都分别和 __y__ 相关联的时候，这种方法比较好。
+
+正规化方法通过给 **损失函数** 添加正规化参数来避免过度拟合：
+
+![Cost Function](../../images/linear_regression/cost-function-with-regularization.svg)
+
+> 注意：你不应该正规化参数 $$\theta_0$$ 。
+
+$$\lambda$$ -正规化参数
+
+**梯度下降** 公示如下：
+
+![Gradient Descent](../../images/linear_regression/gradient-descent-3.svg)
+
+### 引用
+
+- [Machine Learning on Coursera](https://www.coursera.org/learn/machine-learning)
+- [Linear Regression on Wikipedia](https://en.wikipedia.org/wiki/Linear_regression)
+- [Gradient Descent on Wikipedia](https://en.wikipedia.org/wiki/Gradient_descent)
+- [Gradient Descent by Suryansh S.](https://hackernoon.com/gradient-descent-aynk-7cbe95a778da)
+- [Gradient Descent by Niklas Donges](https://towardsdatascience.com/gradient-descent-in-a-nutshell-eaf8c18212f0)
+- [Overfitting on GeeksForGeeks](https://www.geeksforgeeks.org/underfitting-and-overfitting-in-machine-learning/)
