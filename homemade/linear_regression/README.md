@@ -2,15 +2,15 @@
 
 ## Jupyter示例
 
-▶️ [示例|单一变量的线性回归]() - 通过`GDP`来预测`国家幸福指数`
+▶️ [示例|一元线性回归](https://nbviewer.jupyter.org/github/trekhleb/homemade-machine-learning/blob/master/notebooks/linear_regression/univariate_linear_regression_demo.ipynb) - 通过`GDP`预测`国家幸福指数`
 
-▶️ [示例|多变量的线性回归]()- 通过`GDP`和`自由度`来预测`国家幸福指数`
+▶️ [示例|多元线性回归](https://nbviewer.jupyter.org/github/trekhleb/homemade-machine-learning/blob/master/notebooks/linear_regression/multivariate_linear_regression_demo.ipynb)- 通过`GDP`和`自由度`预测`国家幸福指数`
 
-▶️ [示例|非线性回归]()- 通过`多项式`和`正弦函数`特点的线性回归来预测非线型关系
+▶️ [示例|非线性回归](https://nbviewer.jupyter.org/github/trekhleb/homemade-machine-learning/blob/master/notebooks/linear_regression/non_linear_regression_demo.ipynb)- 通过`多项式`和`正弦函数`特点的线性回归预测非线型关系
 
 ##  定义
 
-**线性回归**就是一个线性模型，比如：在一个模型中，如果输入变量(x)和单个的输出变量（y）存在线性关系，更准确来说，如果输出变量（y）可以通过一系列输入变量（x）的线性组合来计算得到，那么我们就称这种模型为线性模型。
+**线性回归** 是一种线性模型，表示输入变量(x)和单个的输出变量（y）存在线性关系，更确切的来说，输出变量（y）可以通过计算一系列输入变量（x）的线性组合得到。
 
 ![Linear Regression](https://upload.wikimedia.org/wikipedia/commons/3/3a/Linear_regression.svg)
 
@@ -108,13 +108,13 @@ _n_     - 特征的个数
 
 ## 多项式回归
 
-多项式回归是以 _x_ 的_n_ 阶多项式来表示独立变量 _x_ 和非独立变量 _y_ 的关系的回归分析方式。 
+多项式回归是以 _x_ 的_n_ 阶多项式来表示独立变量 _x_ 和非独立变量 _y_ 的关系的回归分析的一种方式。 
 
 尽管多项式回归用来拟合非线性模型数据，但是作为一个统计估计问题来说，多项式回归是线性的。因为，某种意义上来说，多项式回归的假定式是一个未知参数从数据中估计而来的线性函数。所以，多项式回归被认为一个多元线性回归的一种特殊形式。
 
 ![Polynomial Regression](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Polyreg_scheffe.svg/650px-Polyreg_scheffe.svg.png)
 
-​                                            示例：三次多项式回归-线性回归的一种类型
+​                                            示例：三元多项式回归-线性回归的一种类型
 
 你可以通过添加新的多项式特征来创建多项式回归，比如，如果房子的价格和它的大小有非线性依赖，你可以添加一些新的大小相关的特征。
 
