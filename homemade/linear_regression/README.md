@@ -6,7 +6,7 @@
 
 ▶️ [示例|多元线性回归](https://nbviewer.jupyter.org/github/trekhleb/homemade-machine-learning/blob/master/notebooks/linear_regression/multivariate_linear_regression_demo.ipynb)- 通过`GDP`和`自由度`预测`国家幸福指数`
 
-▶️ [示例|非线性回归](https://nbviewer.jupyter.org/github/trekhleb/homemade-machine-learning/blob/master/notebooks/linear_regression/non_linear_regression_demo.ipynb)- 通过`多项式`和`正弦函数`特点的线性回归预测非线型关系
+▶️ [示例|非线性回归](https://nbviewer.jupyter.org/github/trekhleb/homemade-machine-learning/blob/master/notebooks/linear_regression/non_linear_regression_demo.ipynb)- 利用带有`多项式`和`正弦函数`特征的线性回归来预测非线型关系
 
 ##  定义
 
@@ -14,11 +14,11 @@
 
 ![Linear Regression](https://upload.wikimedia.org/wikipedia/commons/3/3a/Linear_regression.svg)
 
-例如，上图中的输入变量x和输出变量y之间就存在一种依赖。上图中的红线就表示最佳拟合直线。基于给出的数据点（训练样本），我们尝试用一条直线来尽力拟合点的分布。在真实的场景中，我们通常需要用到多个输入变量来拟合。
+上图中，输入变量x和输出变量y之间存在一种依赖。图中的红线表示最佳拟合直线。基于已有的数据点（训练样本），我们用一条直线尽可能地拟合点的分布。在真实的场景中，我们一般有多个输入变量。
 
 ## 特征（变量）
 
-每一个训练样本都由描述样本的特征（变量）（比如：房间数，房间面积，等等）组成。
+每一组训练样本都由描述样本的特征（变量）（比如：房间数，房间面积，等等）组成。
 
 ![Features](../../images/linear_regression/features.svg)
 
